@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tech.ai - Your AI Assistant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 25px;
+      background: #17243a;
+    }
+    h1 {
+      color: #38bdf8;
+      font-size: 38px;
+    }
+    main {
+      padding: 40px 20px;
+    }
+    input {
+      width: 85%;
+      padding: 15px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 14px 30px;
+      background: #0284c7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    #answer {
+      margin: 25px auto;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>tech.ai</h1>
+    <p>Your Personal AI Assistant</p>
+  </header>
+  <main>
+    <h2>Welcome to tech.ai</h2>
+    <p>Ask anything. Learn anything. Build anything.</p>
+    <input id="question" placeholder="Ask tech.ai anything...">
+    <br>
+    <button onclick="askAI()">Ask tech.ai</button>
+    <div id="answer"></div>
+  </main>
+  <script>
+    function askAI() {
+      const q = document.getElementById("question").value;
+      document.getElementById("answer").innerText =
+        q ? "Welcome to tech.ai! AI connection will be added in the next development step." :
+        "Please enter your question.";
+    }
+  </script>
+</body>
+</html>
